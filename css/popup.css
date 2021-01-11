@@ -1,0 +1,177 @@
+.popup__overlay {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  z-index: 100;
+}
+
+.popup__overlay:after {
+  display: inline-block;
+  height: 100%;
+  width: 0;
+  vertical-align: top;
+  content: "";
+}
+
+.popup__overlay_2 {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  z-index: 101;
+}
+.popup__overlay:after {
+  display: inline-block;
+  height: 100%;
+  width: 0;
+  vertical-align: top;
+  content: "";
+}
+
+.popup {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  max-width: 640px;
+  max-height: 480px;
+
+  background-color: rgb(46, 107, 73);
+  vertical-align: middle;
+}
+.popup2 {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  max-width: 640px;
+  max-height: 480px;
+  background-color: rgb(46, 107, 73);
+  vertical-align: middle;
+}
+#video1,
+#video2,
+#video3 {
+  display: none;
+}
+
+.popup-form__row {
+  margin: 1em 0;
+}
+.prev-video-btn {
+  position: absolute;
+  top: 50%;
+  font-size: 20px;
+  left: 0%;
+  cursor: pointer;
+}
+.next-video-btn {
+  position: absolute;
+  top: 50%;
+  right: 0%;
+  font-size: 20px;
+  cursor: pointer;
+}
+.popup2__close {
+  float: right;
+
+  cursor: pointer;
+
+  font-size: 20px;
+  color: red;
+  background-color: #fff;
+
+  border: 1px solid rgb(223, 10, 10);
+  padding: 8px 15px;
+
+  text-decoration: none;
+  font-weight: bold;
+}
+.popup__close {
+  float: right;
+
+  cursor: pointer;
+
+  font-size: 20px;
+  color: red;
+  background-color: #fff;
+
+  border: 1px solid rgb(223, 10, 10);
+  padding: 8px 15px;
+
+  text-decoration: none;
+  font-weight: bold;
+}
+.popup2__close:hover {
+  background-color: rgb(223, 10, 10);
+  color: #fff !important;
+}
+.popup__close:hover {
+  background-color: rgb(223, 10, 10);
+  color: #fff !important;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+.youtube-video-main-player {
+  position: relative;
+  cursor: pointer;
+}
+.flex-col {
+  flex-direction: column;
+}
+.flex-end {
+  justify-content: flex-end;
+}
+.video-img {
+  width: 100%;
+}
+
+.big-play-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.popup__close:hover {
+  color: #ac1133;
+}
+
+iframe {
+  width: 100%;
+  height: 100%;
+}
+
+/* other styles */
+
+input[type="button"] {
+  border: none;
+  padding: 0.5em;
+  background-color: #ffa34d;
+  font-size: 1.4em;
+}
+
+input[type="button"]:hover {
+  background-color: yellowgreen;
+}
+
+ul {
+  text-align: left;
+  display: inline-block;
+}
+
+@media only screen and (max-width: 700px) {
+  .popup {
+    max-width: 400px;
+    max-height: 300px;
+  }
+}

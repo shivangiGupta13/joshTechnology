@@ -1,0 +1,182 @@
+.home-nav {
+  display: flex;
+  background-color: #11516f;
+  padding: 20px 20px;
+  flex-wrap: wrap;
+  font-size: 18px;
+}
+
+.home-nav .nav-link {
+  padding: 0 20px;
+  color: #fff;
+
+  font-size: 12px;
+}
+.nav-link:hover {
+  color: rgb(56, 143, 16);
+  text-decoration: underline;
+  font-size: 120%;
+}
+.nav-link i {
+  position: absolute;
+  margin-top: 2.5px;
+  margin-left: 5px;
+}
+.nav2-logo {
+  min-width: 50%;
+}
+.nav2 {
+  background-image: url("../img/search_bk.png");
+  padding: 20px 30px;
+  display: flex;
+
+  flex-wrap: wrap;
+  color: #fff;
+}
+.nav2-heading {
+  font-size: 3rem;
+  text-align: center;
+  line-height: 0.8;
+  flex: 1;
+}
+.search-bar {
+  flex: 1;
+  display: flex;
+  padding-left: 20px;
+  flex-direction: column;
+}
+.search-section-text {
+  padding-left: 5px;
+  padding-right: 100px;
+  padding-top: 10px;
+}
+.search-bar-input {
+  width: 70%;
+  height: 50px;
+  padding-left: 15px;
+  border-radius: 10px;
+  border: 1px solid rgb(35, 131, 148);
+}
+.search-icon-img {
+  margin-left: 20px;
+}
+.search-btn {
+  width: 110%;
+}
+.search-bar-input:focus {
+  outline: none;
+}
+
+.mySlides {
+  display: none;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 2000px;
+  position: relative;
+  margin: 0%;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  text-align: left;
+  background-color: rgba(0, 0, 0, 0.45);
+}
+/* The dots/bullets/indicators */
+.dot {
+  height: 10px;
+  width: 10px;
+  margin: 0 2px;
+  margin-bottom: 1%;
+  background-color: grey;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #ffffff;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 600px) {
+  .text {
+    font-size: 11px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .home-nav {
+    padding: 10px 10px;
+    font-size: 18px;
+  }
+  .nav-link {
+    padding: 15px;
+  }
+  .search-bar-input {
+    width: 100%;
+    height: 40px;
+    padding-left: 20px;
+    border-radius: 10px;
+    border: 1px solid rgb(35, 131, 148);
+  }
+  .search-section-text {
+    padding-right: 0px;
+  }
+  .nav2-heading {
+    font-size: 2rem;
+    text-align: center;
+    line-height: 0.9;
+  }
+  .nav2 {
+    padding: 15px 15px;
+    display: block;
+  }
+  #nav-hamburger {
+    display: block;
+    color: white;
+    text-align: right;
+    font-size: 20px;
+  }
+  #nav-hamburger:hover {
+    cursor: pointer;
+  }
+  .search-bar {
+    margin-top: 20px;
+    padding-left: 0;
+  }
+}
